@@ -1,2 +1,2 @@
-# KARAOKE_Api
-PROYECTO I – KARAOKE! del curso de Arquitectura de Softaware, este programa es el APi de una aplicación web para Karaoke
+# CURRICULIM_Api
+PROYECTO I – CURRICULUM! del curso de Base de Datos Avanzadas

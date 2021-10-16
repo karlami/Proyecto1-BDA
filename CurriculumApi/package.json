@@ -1,13 +1,13 @@
 {
-  "name": "parqueo_-_restapi",
+  "name": "curriculim_-_restapi",
   "version": "1.0.0",
-  "description": "Rest-Api para el Laboratorio #1 de SOA",
+  "description": "Rest-Api para el Proyecto #1 de BDA",
   "main": "app.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Victor Araya Hernández",
+  "author": "Fiorella Delgado Leon",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
