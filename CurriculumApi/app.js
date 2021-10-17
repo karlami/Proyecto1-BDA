@@ -30,6 +30,32 @@ app.get('/candidatos', async(req, res) => {
   res.send(jsonResponse);
 })
 
+app.put('/candidatos/:id', async(req, res) => {    
+  console.log("UPDATE")
+  try {
+      const id = req.params.id;
+      const upBody = req.body;
+      const options = {new: true};
+      const jsonResponse = await db.upDbData(id, upBody);
+      console.log(jsonResponse);
+      res.send(jsonResponse); 
+  } catch (error){
+      console.log(error.message);
+  }
+})
+
+app.delete('/candidatos/:id', async(req, res) => { 
+  console.log("DELETE")
+  try {
+      const id = req.params.id;
+      const jsonResponse = await db.delDbData(id);
+      console.log(jsonResponse);
+      res.send(jsonResponse); 
+  } catch (error){
+      console.log(error.message);
+  }
+})
+
 app.post('/newSong', async(req, res) => { 
   //console.log("POST")
   const { username,password } = req.body;

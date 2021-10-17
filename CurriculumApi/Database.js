@@ -5,7 +5,7 @@ export class Database {
     constructor() {
       // Hay que cambiar el nombre Fiorella, por el nombre de cada uno: Karla, Luis o Bradly
       // Y en donde dice Fiorella12345, lo cambian por Karla12345 o Luis12345 o Bradly12345
-      this.url = 'mongodb+srv://Fiorella:Fiorella12345@clusterbda-flkb.iz39y.mongodb.net/CurriculumDB?retryWrites=true&w=majority';
+      this.url = 'mongodb+srv://Karla:Karla12345@clusterbda-flkb.iz39y.mongodb.net/CurriculumDB?retryWrites=true&w=majority';
       this.client = new MongoClient(this.url);
       this.dbName = 'CurriculumDB';
     }
@@ -15,12 +15,27 @@ export class Database {
         console.log('Connected successfully to Database Server');
     }
 
-    async getDbData() {
+    async upDbData(id, updates) {
         const db = this.client.db(this.dbName);
         const collection = db.collection('Candidatos');        
-        const findResult = await collection.find({}).toArray();
-        return findResult
+        const updateResult = await collection.findOneAndUpdate({correo: id}, 
+                                                              {$set: updates},
+                                                              { upsert: true });
+        return updateResult
     }
+
+    async delDbData(id) {
+      const db = this.client.db(this.dbName);
+      const collection = db.collection('Candidatos');        
+      const deleteResult = await collection.findOneAndDelete({correo: id});
+  }
+
+    async getDbData() {
+      const db = this.client.db(this.dbName);
+      const collection = db.collection('Candidatos');        
+      const findResult = await collection.find({}).toArray();
+      return findResult
+  }
     
     async logInUser(user, pass){
       const db = this.client.db(this.dbName);
@@ -75,9 +90,9 @@ export class Database {
     async insertData() {
       const db = this.client.db(this.dbName);
       const collection = db.collection('Candidatos'); 
-      var myobj = { correo: "anaR@gmail.com", clave:"12345", nombre:"Ana Rivera Rivera", pais:"España", 
-                  titulos:["CCNA", "Ing.Electronica"], tecInf:1, lenguajes:"Verilog", 
-                  idiomas:["Ingles Avanzado", "Español"]};    
+      var myobj = { correo: "prueba@gmail.com", clave:"12345", nombre:"Carlos", pais:"prueba", 
+                  titulos:["pruebaaa", "I.Electronica"], tecInf:1, lenguajes:"Python", 
+                  idiomas:["Ingles Avanzado", "Frances"]};    
       const findResult = await collection.insertOne(myobj);//find({}).toArray();
       console.log("1 document inserted");
       return findResult
