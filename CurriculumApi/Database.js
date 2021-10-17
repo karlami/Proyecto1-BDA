@@ -87,7 +87,7 @@ export class Database {
     }
 
     // Insertar nuevo documento
-    async insertData() {
+    async insertDataT(correo, clave, nombre, pais, titulos, tecInf, lenguajes, idiomas) {
       const db = this.client.db(this.dbName);
       const collection = db.collection('Candidatos'); 
       var myobj = { correo: "prueba@gmail.com", clave:"12345", nombre:"Carlos", pais:"prueba", 
