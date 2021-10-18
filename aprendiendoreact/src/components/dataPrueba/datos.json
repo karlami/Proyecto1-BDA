@@ -1,0 +1,5 @@
+[
+    {"correo":"luisk@gmail.com","contrasena":"1234","nombre":"Luis Carlos Mora Fonseca","pais":"Costa Rica","TI":true,"lenguajes":["Java","Python","C","C++","C#"],"idiomas":[["Español","Avanzado"],["Ingles","Basico"]]},
+    {"correo":"jacinto@gmail.com","contrasena":"1234","nombre":"Martin Jacinto Benavente Ortiz","pais":"El Salvador","titulo":["Contabilidad"],"TI":false,"lenguajes":["Ninguno"],"idiomas":[["Español","Avanzado"],["Ingles","Avanzado"]]},
+    {"correo":"laura@gmail.com","contrasena":"1234","nombre":"Laura María Ortiz Ortega","pais":"Panama","titulo":["Abogaduría","Contabilidad"],"TI":false,"lenguajes":["Ninguno"],"idiomas":[["Español","Avanzado"],["Ingles","Avanzado"]]}
+]

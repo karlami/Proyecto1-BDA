@@ -1,0 +1,43 @@
+.LoginBack {
+    background-color: #5cddd2;
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: left;
+}
+
+.ButtLogB {
+    background-color: #199685;
+    padding: 10px 30px;
+    color: white;
+}
+
+.LogIn {
+    background-color: #628882;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.Log-user {
+    padding: 10px 30px;
+    font-size: calc(5px + 2vmin);
+    margin: 20px 0px;
+}
+
+.Log-password {
+    padding: 10px 30px;
+    font-size: calc(5px + 2vmin);
+    margin: 20px 0px;
+}
+
+.ButtLogIn {
+    background-color: #6fe09b;
+    padding: 10px 30px;
+    margin: 20px 0px;
+}

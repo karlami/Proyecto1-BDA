@@ -1,0 +1,79 @@
+.UserBack {
+    background-color: #098dbd;
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.ButtUserSalir {
+    background-color: #282ab1;
+    padding: 10px 30px;
+    color: white;
+}
+
+.User {
+    background-color: #346892;
+    min-height: 90.5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(5px + 2vmin);
+    color: white;
+}
+
+.Current-user {
+    padding: 1px 20px;
+    font-size: calc(5px + 2vmin);
+    margin: 10px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.Current-name {
+    padding: 1px 20px;
+    font-size: calc(5px + 2vmin);
+    margin: 10px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.Current-country {
+    padding: 1px 20px;
+    font-size: calc(5px + 2vmin);
+    margin: 10px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.Current-titles {
+    padding: 1px 20px;
+    font-size: calc(5px + 2vmin);
+    margin: 10px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.Current-lenguajes {
+    padding: 1px 20px;
+    font-size: calc(5px + 2vmin);
+    margin: 10px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.Current-idiomas {
+    padding: 1px 20px;
+    font-size: calc(5px + 2vmin);
+    margin: 10px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.ButtUserEdit {
+    background-color: #424258;
+    padding: 5px 10px;
+    font-size: calc(5px + 2vmin);
+    color: white;
+}
